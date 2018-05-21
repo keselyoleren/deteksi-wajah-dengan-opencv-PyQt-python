@@ -20,7 +20,7 @@ except ImportError:
     from PyQt4.QtCore import *
 
 class Detect(QMainWindow):
-    face_cascade = cv2.CascadeClassifier(os.path.join('haarcascade_frontalface_default.xml'))
+    face_cascade = cv2.CascadeClassifier(os.path.join('haarcascade_frontalface_alt.xml'))
     def __init__(self):
         super(Detect, self).__init__()
         loadUi(os.path.join('ui/main.ui'), self)
